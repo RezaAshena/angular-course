@@ -12,7 +12,7 @@ import { Course } from '../../model/course';
 })
 export class CourseCardComponent {
 
-  @Input()
+  @Input({required:true})
   course?:Course;
 
 }
