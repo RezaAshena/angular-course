@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { CourseCardComponent } from './courses/course-card/course-card.component';
 import { COURSES } from '../db-data';
+import { Course } from './model/course';
 
 @Component({
   selector: 'app-root',
@@ -18,5 +19,9 @@ export class AppComponent {
    coreCourse=COURSES[0];
    coreCourse2=COURSES[1];
    coreCourse3=COURSES[2];
+
+   onCourseSelected(course:Course){
+    console.log("App component - click event bubbled...",course)
+   }
 
 }
