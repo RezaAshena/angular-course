@@ -15,4 +15,9 @@ export class CourseCardComponent {
   @Input({required:true})
   course?:Course;
 
+
+  onCourseViewed(){
+    console.log("card component - button Clicked...");
+  }
+
 }
