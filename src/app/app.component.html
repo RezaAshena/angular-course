@@ -1,7 +1,13 @@
 <div class="courses">
+
   @for (course of course; track course.id){
 
   <course-card  (courseSelected)="onCourseSelected($event)" [course]="course"/>
 
   }
+
+  @empty {
+    <h1>No Course find!</h1>
+  }
+
 </div>
