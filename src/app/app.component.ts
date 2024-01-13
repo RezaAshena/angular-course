@@ -16,7 +16,7 @@ import { Course } from './model/course';
 
 export class AppComponent {
 
-  course =COURSES;
+  course =[];
 
   onCourseSelected(course:Course){
     console.log("App component - click event bubbled...",course)
