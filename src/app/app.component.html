@@ -1,12 +1,12 @@
 <div class="courses">
-  @for (course of course; track course.id; let index=$index; let count = $count;
-  let first = $first; let last=$last; let even=$even; let odd=$odd;){
+  @for (course of course; track course.id;  let count = $count;
+   let last=$last; let even=$even; let odd=$odd;){
 
   <course-card
     (courseSelected)="onCourseSelected($event)"
     [course]="course"
-    [index]="index"
-    [class.is-first]="first"
+    [index]="$index"
+    [class.is-first]="$first"
     [class.is-last]="last"
     [class.is-even]="even"
     [class.is-odd]="odd"
