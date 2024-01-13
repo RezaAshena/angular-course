@@ -1,7 +1,7 @@
-
-
 <div class="courses">
-  <course-card (courseSelected)="onCourseSelected($event)" [course]="coreCourse"></course-card>
-  <course-card (courseSelected)="onCourseSelected($event)" [course]="coreCourse2"></course-card>
-  <course-card (courseSelected)="onCourseSelected($event)" [course]="coreCourse3"></course-card>
+  @for (course of course; track course.id){
+
+  <course-card  (courseSelected)="onCourseSelected($event)" [course]="course"/>
+
+  }
 </div>

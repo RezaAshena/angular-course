@@ -15,12 +15,10 @@ import { Course } from './model/course';
 
 
 export class AppComponent {
-  title = 'angular-course';
-   coreCourse=COURSES[0];
-   coreCourse2=COURSES[1];
-   coreCourse3=COURSES[2];
 
-   onCourseSelected(course:Course){
+  course =COURSES;
+
+  onCourseSelected(course:Course){
     console.log("App component - click event bubbled...",course)
    }
 
